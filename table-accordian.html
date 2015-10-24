@@ -1,0 +1,2590 @@
+<!DOCTYPE HTML PUBLIC "HTML 4.01 Strict"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head prefix="og: http://ogp.me/ns#">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Samuel Rivers-Moore – Archive website</title>
+    <meta name="description" content="Samuel Rivers-Moore's archive website – Graphic design, art and else." />
+    <meta property="og:site_name" content="samuelriversmoore.net">
+    <meta property="og:title" content="Samuel Rivers-Moore – archive website" />
+    <meta property="og:description" content="Graphic design, art and else." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.samuelriversmoore.net/" />
+    <meta property="og:image" content="http://www.samuelriversmoore.net/index.jpg/" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="452">
+    <meta property="og:image:height" content="400">
+    <link rel="stylesheet" href="./public/docs/css/screen.css" type="text/css" media="screen">
+    <link rel="alternate" type="application/atom+xml" title="samuelriversmoore.net" href="./?/feed/">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./public/docs/js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // images nbr
+        $data.find('tr.project').each(function() {
+            var objects = $(this).nextUntil('tr.project').find("div.gallery ul").children('li.object');
+            var maxCount = objects.length;
+            if (maxCount <= 1) {
+                $(this).find('td.sizes').text('1');
+            } else {
+                $(this).find('td.sizes').text(maxCount);
+            }
+        });
+
+        var sizes;
+        var date;
+        $.tablesorter.addParser({
+            id: "Date",
+            is: function(s) {
+                return false;
+            },
+            format: function(s, table) {
+                //return new Date(s).getTime() || '';
+                date = (s + '').match(/(\d{1,2}-\w{3}-\d{4})(\s+\d{1,2}:\d{1,2})/);
+                date[1] = date[1].split("-").join(" ");
+                return date ? new Date(date[1] + date[2]).getTime() || s : s;
+            },
+            type: "numeric"
+        });
+
+        $.tablesorter.addParser({
+            // set a unique id 
+            id: 'Size',
+            is: function(s) {
+                return false;
+            },
+            format: function(s) {
+                sizes = s;
+                if (sizes.indexOf("/") != -1) {
+                    count = sizes.split('/');
+                    sizes = count[1];
+                }
+                sizes = parseInt(sizes);
+                return sizes;
+            },
+            type: "numeric"
+        });
+
+        $("#myTable").tablesorter({
+            sortAppend: [
+                [1, 1]
+            ],
+            sortList: [
+                [1, 1]
+            ],
+            headers: {
+                1: {
+                    sorter: "Date"
+                },
+                2: {
+                    sorter: "Size"
+                }
+            }
+        });
+    });
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-49360848-1', 'samuelriversmoore.net');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div id="container" class="js-disabled" data-enhance="false" data-role="none">
+        <div id="repotitle" class="top">
+            <h1>
+		Index of /samuel&shy;riversmoore&shy;.net
+	</h1>
+        </div>
+        <table id="myTable" class="tablesorter">
+            <thead>
+                <tr id="headline">
+                    <th id="left"><span class="subHead">Name</span></th>
+                    <th class="opt3"><span class="subHead sorter-shortDate dateFormat-ddmmyyyy">Last Modified</span></th>
+                    <th class="opt1"><span class="subHead">Size</span></th>
+                    <th class="opt2"><span class="subHead">Description</span></th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                <tr class="project selected" id="Donelle-Woolford" title="Performer Artisan Narrator [Posters, Postcard]" alt="Donelle-Woolford [Posters, Postcard]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Performer Artisan Narrator" alt="Performer Artisan Narrator">Performer Artisan Narrator</div>
+                    </td>
+                    <td class="parent opt3 dates">25-Feb-2014 17:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Posters, Postcard"><span class="tagCont">Posters, Postcard</span></td>
+                </tr>
+                <tr class="expand-child selected" id="Donelle-Woolford-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Donelle-Woolford-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Donelle-Woolford-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Performer Artisan Narrator
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Two posters and a postcard for Donelle Woolford's exhibition in Marrakech, within the frame of the contemporary arts biennale, following the invitation of curator <a href="http://www.disparere.com/agence">Karima Boudou</a>. Donelle Woolford is an afro-american artist created by <a href="http://www.thingsthatfall.com">Joe Scanlan</a>.
+                                                    <br />
+                                                    <br /> This project was made in collaboration with <a href="http://www.ttttttt.info">Tayeb Bayri</a> as part of <a href="http://www.cnfsn.biz">CNFSN.biz</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/17.Donelle-Woolford/03.jpg" src="loading.gif" alt="Performer Artisan Narrator" width="1000" height="683">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/17.Donelle-Woolford/02.jpg" src="loading.gif" alt="Performer Artisan Narrator" width="1200" height="800">
+                                            <div class="description">
+                                                <em>Postcard by Tayeb Bayri</em>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/17.Donelle-Woolford/01.png" src="loading.gif" alt="Performer Artisan Narrator" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="Bobigny2014" title="Bobigny 2014 [Communication, Greetings]" alt="Bobigny2014 [Communication, Greetings]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Bobigny 2014" alt="Bobigny 2014">Bobigny 2014</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jan-2014 23:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Communication, Greetings"><span class="tagCont">Communication, Greetings</span></td>
+                </tr>
+                <tr class="expand-child selected" id="Bobigny2014-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Bobigny2014-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Bobigny2014-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Bobigny 2014
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Communication campaign for the 2014 New Year's greetings of the City of&nbsp;Bobigny.
+                                                    <br />
+                                                    <br /> We’ve been asked to work on many different formats following the catch phrase «Bobigny, gueule d’amour belle d’esprit». We took this chance to design a lot of different pictures in a generous mood. Each illustration is based on a limited vocabulary of simple shapes, trichromatic printed with bright colors.
+                                                    <br />
+                                                    <br /> This project was made in collaboration with <a href="http://www.lecollecteur.fr">Pierre Tandille</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/022.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="664">
+                                            <div class="description">
+                                                <em>Vocabulary of shapes</em>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/021.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="705">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/020.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/019.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/018.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/016.jpg" src="loading.gif" alt="Bobigny 2014" width="886" height="591">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/015.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/013.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/012.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/11.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/10.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/09.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/08.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/07.jpg" src="loading.gif" alt="Bobigny 2014" width="2000" height="1333">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/06.jpg" src="loading.gif" alt="Bobigny 2014" width="2000" height="1333">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/05.jpg" src="loading.gif" alt="Bobigny 2014" width="1400" height="2054">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/04.jpg" src="loading.gif" alt="Bobigny 2014" width="2000" height="1333">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/03.jpg" src="loading.gif" alt="Bobigny 2014" width="872" height="654">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/02.jpg" src="loading.gif" alt="Bobigny 2014" width="2000" height="1333">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/01.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/16.Bobigny2014/00.jpg" src="loading.gif" alt="Bobigny 2014" width="1000" height="667">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Le-Commander-Keen" title="Oui Sabotage / Le Commander Keen [Poster, Concert]" alt="Le-Commander-Keen [Poster, Concert]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Oui Sabotage / Le Commander Keen" alt="Oui Sabotage / Le Commander Keen">Oui Sabotage / Le Commander Keen</div>
+                    </td>
+                    <td class="parent opt3 dates">05-Nov-2013 01:29</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Poster, Concert"><span class="tagCont">Poster, Concert</span></td>
+                </tr>
+                <tr class="expand-child" id="Le-Commander-Keen-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Le-Commander-Keen-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Le-Commander-Keen-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Oui Sabotage / Le Commander Keen
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Poster for a gig in Strasbourg. Screen printed at home with grandmaster <a href="http://www.pierre-faedi.com/">Pierre Faedi</a> from <a href="http://lecommanderkeen.bandcamp.com/">Le Commander Keen</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/15.Le-Commander-Keen/01.png" src="loading.gif" alt="Oui Sabotage / Le Commander Keen" width="707" height="1000">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Keleketla-Radio-Show" title="Keleketla Radio [Communication, Radio program]" alt="Keleketla-Radio-Show [Communication, Radio program]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Keleketla Radio" alt="Keleketla Radio">Keleketla Radio</div>
+                    </td>
+                    <td class="parent opt3 dates">27-Sep-2013 17:00</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Communication, Radio program"><span class="tagCont">Communication, Radio program</span></td>
+                </tr>
+                <tr class="expand-child" id="Keleketla-Radio-Show-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Keleketla-Radio-Show-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Keleketla-Radio-Show-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Keleketla Radio
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Picture announcing a special radio program featuring Rangoato Hlasane and Kagiso Mnisi from South-African art collective <a href="http://keleketla.org/">Keleketla!</a>
+                                                    <br /> The event was organized with Radio En Construction within the frame of Strasbourg’s Ososphère festival.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/15.Keleketla-Radio-Show/03.jpg" src="loading.gif" alt="Keleketla Radio" width="1280" height="850">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/15.Keleketla-Radio-Show/02.jpg" src="loading.gif" alt="Keleketla Radio" width="2048" height="1360">
+                                            <div class="description">
+                                                <em>Kagiso and Rangoato (photo : Cassidy Schoeffel)</em>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/15.Keleketla-Radio-Show/01.jpg" src="loading.gif" alt="Keleketla Radio" width="900" height="636">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Arte-Creative-Wallpaper" title="Arte Creative - wallpaper [Picture, Wallpaper]" alt="Arte-Creative-Wallpaper [Picture, Wallpaper]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Arte Creative - wallpaper" alt="Arte Creative - wallpaper">Arte Creative - wallpaper</div>
+                    </td>
+                    <td class="parent opt3 dates">28-Aug-2013 23:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Picture, Wallpaper"><span class="tagCont">Picture, Wallpaper</span></td>
+                </tr>
+                <tr class="expand-child" id="Arte-Creative-Wallpaper-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Arte-Creative-Wallpaper-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Arte-Creative-Wallpaper-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Arte Creative - wallpaper
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>A psychedelic wallpaper made for Arte Creative's website.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/14.Arte-Creative-Wallpaper/02.jpg" src="loading.gif" alt="Arte Creative - wallpaper" width="900" height="576">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="PPPI-introduction" title="PP/PI ~ Introduction [Introduction, Graduation]" alt="PPPI-introduction [Introduction, Graduation]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="PP/PI ~ Introduction" alt="PP/PI ~ Introduction">PP/PI ~ Introduction</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jul-2013 00:05</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Introduction, Graduation"><span class="tagCont">Introduction, Graduation</span></td>
+                </tr>
+                <tr class="expand-child selected" id="PPPI-introduction-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="PPPI-introduction-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="PPPI-introduction-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                PP/PI ~ Introduction
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p><b>[Pirate Party / Pirate Identity]</b> (Graduation project)
+                                                    <br />
+                                                    <br />
+                                                    <u>Introduction</u> :
+                                                    <br /> The Pirate Party is a young political party founded in Sweden in 2006 and gently seeding all over the world.
+                                                    <br /> Post-internet culture is part of its DNA and its program mainly focuses on Human Rights and Fundamental Freedoms issues, as well as on contemporary copyright problematics. Surfing on a general exasperation towards conventional political parties, it presents itself as an alternative to the Left/Right divisions, as well as a solution to «upgrade» democracy for a more horizontal political system.
+                                                    <br /> The Pirate Party acts as a bridge between, on the one hand, some more or less radical and structured political movements (Anonymous, WikiLeaks, GNU, etc.) and on the other hand, an institutional way to have an influence into the democratic process.
+                                                    <br /> In most countries, its visual identity is quite conventional and its way to communicate is sometime very clumsy (like it’s the case in France).
+                                                    <br /> Since the Pirate Party depicts itself as different, my project aims to experiment unconventional methods to design its visual identity. I also aim to imagine some envelopes that fits its ideas in a faithful way, rather than in a simplistic or watered down one. Thereby, my general matter is more about representing my subject rather than serving it.
+                                                    <br />
+                                                    <br />
+                                                    <u>Related</u> :
+                                                    <br /> 1. Introduction
+                                                    <br />
+                                                    <span class="related">2. <a href="#PPPI-identity">Identity</a></span>
+                                                    <br />
+                                                    <span class="related">3. <a href="#PPPI-easyposters">Easy posters</a></span>
+                                                    <br />
+                                                    <span class="related">4. <a href="#PPPI-twitterposters">Twitter posters</a></span>
+                                                    <br />
+                                                    <span class="related">5. <a href="#PPPI-hybridposters">Hybrid posters</a></span>
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/09.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="768" height="1024">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/08.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="1024" height="769">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/07.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="1024" height="1024">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/06.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="1024" height="768">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/05.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="1024" height="1024">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/04.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="900" height="563">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/03.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="515" height="774">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/02.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="882" height="758">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/13.PPPI-introduction/01.jpg" src="loading.gif" alt="PP/PI ~ Introduction" width="900" height="563">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="PPPI-identity" title="PP/PI ~ Identity [Identity, Graduation project]" alt="PPPI-identity [Identity, Graduation project]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="PP/PI ~ Identity" alt="PP/PI ~ Identity">PP/PI ~ Identity</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jul-2013 00:04</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Identity, Graduation project"><span class="tagCont">Identity, Graduation project</span></td>
+                </tr>
+                <tr class="expand-child selected" id="PPPI-identity-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="PPPI-identity-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="PPPI-identity-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                PP/PI ~ Identity
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p><b>[Pirate Party / Pirate Identity]</b> (Graduation project)
+                                                    <br />
+                                                    <br />
+                                                    <u>Identity</u> :
+                                                    <br /> Inspired by water, flags and captchas, this logo was built using PureData, an open source software originaly dedicated to sound and data streams. Its shape is always changing, influenced by random deformations and ondulations.
+                                                    <br /> It plays with the oxymoron expressed by the Party's name, opposing the rigidity of institutional structures to the more dynamic, moving and undefined aspects of activism.
+                                                    <br>
+                                                    <br />
+                                                    <u>Fonts in use</u> :
+                                                    <br /> Terminal Grotesque by Raphaël Bastide (custom version)
+                                                    <br /> Linux Libertine by Philipp H. Poll
+                                                    <br />
+                                                    <br />
+                                                    <u>Related</u> :
+                                                    <br />
+                                                    <span class="related">1. <a href="#PPPI-introduction">Introduction</a></span>
+                                                    <br /> 2. Identity
+                                                    <br />
+                                                    <span class="related">3. <a href="#PPPI-easyposters">Easy posters</a></span>
+                                                    <br />
+                                                    <span class="related">4. <a href="#PPPI-twitterposters">Twitter posters</a></span>
+                                                    <br />
+                                                    <span class="related">5. <a href="#PPPI-hybridposters">Hybrid posters</a></span>
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="embed object">
+                                        <iframe class="video" width="1280" height="720" data-src="//www.youtube.com/embed/zYyIZvbnczU
+		?modestbranding=1
+		&rel=0
+		&loop=1
+		&playlist=VIDEO_ID
+		&autoplay=1
+		&vq=hd720
+		&controls=0
+		&showinfo=0
+		&enablejsapi=1" src="" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="PPPI-easyposters" title="PP/PI ~ Easy posters [Script, Poster generator]" alt="PPPI-easyposters [Script, Poster generator]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="PP/PI ~ Easy posters" alt="PP/PI ~ Easy posters">PP/PI ~ Easy posters</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jul-2013 00:03</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Script, Poster generator"><span class="tagCont">Script, Poster generator</span></td>
+                </tr>
+                <tr class="expand-child selected" id="PPPI-easyposters-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="PPPI-easyposters-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="PPPI-easyposters-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                PP/PI ~ Easy posters
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p><b>[Pirate Party / Pirate Identity]</b> (Graduation project)
+                                                    <br />
+                                                    <br />
+                                                    <u>Generated posters</u> :
+                                                    <br /> A Processing script designed to set up posters very quickly and easily. The program automatically lays out the text typed by the user, adjusting each line to fit the poster's width. The result is kind of rough, urgent, giving some spontaneity to political communication.
+                                                    <br />
+                                                    <br />
+                                                    <u>Related</u> :
+                                                    <br />
+                                                    <span class="related">1. <a href="#PPPI-introduction">Introduction</a></span>
+                                                    <br />
+                                                    <span class="related">2. <a href="#PPPI-identity">Identity</a></span>
+                                                    <br /> 3. Easy posters
+                                                    <br />
+                                                    <span class="related">4. <a href="#PPPI-twitterposters">Twitter posters</a></span>
+                                                    <br />
+                                                    <span class="related">5. <a href="#PPPI-hybridposters">Hybrid posters</a></span>
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="embed object">
+                                        <iframe class="video" width="599" height="848" data-src="//www.youtube.com/embed/84J76e4Iaag
+		?modestbranding=1
+		&rel=0
+		&loop=1
+		&playlist=VIDEO_ID
+		&autoplay=1
+		&vq=hd720
+		&controls=0
+		&showinfo=0
+		&enablejsapi=1" src="" frameborder="0" allowfullscreen>
+                                        </iframe>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="PPPI-twitterposters" title="PP/PI ~ Twitter posters [Script, Poster generator]" alt="PPPI-twitterposters [Script, Poster generator]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="PP/PI ~ Twitter posters" alt="PP/PI ~ Twitter posters">PP/PI ~ Twitter posters</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jul-2013 00:02</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Script, Poster generator"><span class="tagCont">Script, Poster generator</span></td>
+                </tr>
+                <tr class="expand-child selected" id="PPPI-twitterposters-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="PPPI-twitterposters-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="PPPI-twitterposters-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                PP/PI ~ Twitter posters
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p><b>[Pirate Party / Pirate Identity]</b> (Graduation project)
+                                                    <br />
+                                                    <br />
+                                                    <u>Twitter posters</u> :
+                                                    <br /> Based on the Easy Poster's script, this program randomly and automatically lays out posters, using tweets containing selected keywords such as «party», «parti», «pirate», «piraten», «piraat», etc. as a content. It is a attempt to transform some «harmless» tweets into political posters with a sometime absurd meaning. It also gives an official dimension to every tweeted messages mentioning the Pirate Party, which admits in this way its own criticism (even if sometimes, it’s just about «pirate costume parties»).
+                                                    <br />
+                                                    <br />
+                                                    <u>Related</u> :
+                                                    <br />
+                                                    <span class="related">1. <a href="#PPPI-introduction">Introduction</a></span>
+                                                    <br />
+                                                    <span class="related">2. <a href="#PPPI-identity">Identity</a></span>
+                                                    <br />
+                                                    <span class="related">3. <a href="#PPPI-easyposters">Easy posters</a></span>
+                                                    <br /> 4. Twitter posters
+                                                    <br />
+                                                    <span class="related">5. <a href="#PPPI-hybridposters">Hybrid posters</a></span>
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/099.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/098.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/097.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/096.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/095.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/094.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/093.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/092.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/091.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/090.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/089.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/088.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/087.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/086.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/085.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/084.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/083.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/082.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/081.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/080.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/079.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/078.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/077.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/076.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/075.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/074.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/073.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/072.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/071.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/070.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/069.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/068.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/067.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/066.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/065.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/064.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/063.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/062.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/061.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/060.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/059.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/058.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/057.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/056.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/055.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/054.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/053.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/052.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/051.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/050.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/049.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/048.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/047.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/046.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/045.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/044.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/043.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/042.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/041.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/040.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/039.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/038.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/037.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/036.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/035.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/034.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/033.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/032.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/031.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/030.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/029.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/028.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/027.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/026.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/025.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/024.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/023.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/022.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/021.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/020.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/019.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/018.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/017.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/016.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/015.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/014.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/013.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/012.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/011.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/010.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/009.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/008.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/007.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/006.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/005.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/004.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/003.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/002.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/001.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/10.PPPI-twitterposters/000.png" src="loading.gif" alt="PP/PI ~ Twitter posters" width="600" height="849">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="PPPI-hybridposters" title="PP/PI ~ Hybrid posters [Posters]" alt="PPPI-hybridposters [Posters]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="PP/PI ~ Hybrid posters" alt="PP/PI ~ Hybrid posters">PP/PI ~ Hybrid posters</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jul-2013 00:01</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Posters"><span class="tagCont">Posters</span></td>
+                </tr>
+                <tr class="expand-child selected" id="PPPI-hybridposters-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="PPPI-hybridposters-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="PPPI-hybridposters-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                PP/PI ~ Hybrid posters
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p><b>[Pirate Party / Pirate Identity]</b> (Graduation project)
+                                                    <br />
+                                                    <br />
+                                                    <u>Hybrid posters</u> :
+                                                    <br /> This series of posters plays with the various references and trends existing within the Pirate Party. It aims to promote (contradictory) ideas more than the faces of some party members. Screenprinted with black «the opaque» and white «the glossy» ink.
+                                                    <br />
+                                                    <br />
+                                                    <u>Related</u> :
+                                                    <br />
+                                                    <span class="related">1. <a href="#PPPI-introduction">Introduction</a></span>
+                                                    <br />
+                                                    <span class="related">2. <a href="#PPPI-identity">Identity</a></span>
+                                                    <br />
+                                                    <span class="related">3. <a href="#PPPI-easyposters">Easy posters</a></span>
+                                                    <br />
+                                                    <span class="related">4. <a href="#PPPI-twitterposters">Twitter posters</a></span>
+                                                    <br /> 5. Hybrid posters
+                                                    <br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/09.PPPI-hybridposters/004.jpg" src="loading.gif" alt="PP/PI ~ Hybrid posters" width="534" height="773">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/09.PPPI-hybridposters/003.jpg" src="loading.gif" alt="PP/PI ~ Hybrid posters" width="534" height="773">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/09.PPPI-hybridposters/002.jpg" src="loading.gif" alt="PP/PI ~ Hybrid posters" width="534" height="772">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/09.PPPI-hybridposters/001.jpg" src="loading.gif" alt="PP/PI ~ Hybrid posters" width="534" height="773">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Thesis" title="Transparence Camouflage Opacité [Essay, Graduation]" alt="Thesis [Essay, Graduation]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Transparence Camouflage Opacité" alt="Transparence Camouflage Opacité">Transparence Camouflage Opacité</div>
+                    </td>
+                    <td class="parent opt3 dates">10-May-2013 23:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Essay, Graduation"><span class="tagCont">Essay, Graduation</span></td>
+                </tr>
+                <tr class="expand-child" id="Thesis-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Thesis-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Thesis-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Transparence Camouflage Opacité
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>For my graduation essay – entitled "Transparence, Camouflage, Opacité" – I worked on Dutch design collective <a href="http://www.metahaven.net">Metahaven</a>'s on going research about an "identity" of the famous whistleblower website and organisation <a href="http://wikileaks.org/">Wikileaks</a>.
+                                                    <br />
+                                                    <br /> I tried to understand and describe the different and complex aspects of this project and of its context. I gave some interest to the notion of transparency, considered from an historical and architectural perspective. I also attempted to identify Metahaven's process and deeper motivations / strategy. I finally tried to depict an overview of the contemporary issues and ambiguities of a design approach of activism.
+                                                    <br>
+                                                    <br /> You can read this essay <a href="http://issuu.com/samuelriversmoore/docs/transparence_camouflage_opacite">here</a> and buy it <a href="http://www.blurb.fr/b/4187580-transparence-camouflage-opacite">here</a> (print on demand).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Thesis/01.jpg" src="loading.gif" alt="Transparence Camouflage Opacité" width="900" height="710">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Delko2012" title="Delko2012 [Poster, Campaign]" alt="Delko2012 [Poster, Campaign]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Delko2012" alt="Delko2012">Delko2012</div>
+                    </td>
+                    <td class="parent opt3 dates">19-May-2013 15:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Poster, Campaign"><span class="tagCont">Poster, Campaign</span></td>
+                </tr>
+                <tr class="expand-child" id="Delko2012-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Delko2012-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Delko2012-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Delko2012
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>True poster for a false political campaign following one week of residency in an unclear space in Rennes. Political bureau, graphic design studio, space for yoga, artist's residency or proximity service? Nobody really ever knew what could be its main function.
+                                                    <br />
+                                                    <br /> Moar :
+                                                    <a href="http://www.xxxxxxxxx.pl/www.delko2012.com/index.html">xxxxxxxxx</a>
+                                                    <br />
+                                                    <a href="http://www.hebergement-avril.com">Hebergement-avril</a>
+                                                    <br />
+                                                    <a href="http://www.vvikipedia.eu">VVikipedia</a>
+                                                    <br />
+                                                    <a href="http://www.delko2012.com">Delko2012</a>
+                                                    <br />
+                                                    <a href="http://www.labonneadresse.eu/">Labonneadresse.eu</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/07.jpg" src="loading.gif" alt="Delko2012" width="594" height="400">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/06.jpg" src="loading.gif" alt="Delko2012" width="260" height="390">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/05.png" src="loading.gif" alt="Delko2012" width="252" height="200">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/05.jpg" src="loading.gif" alt="Delko2012" width="260" height="390">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/04.png" src="loading.gif" alt="Delko2012" width="252" height="200">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/04.jpg" src="loading.gif" alt="Delko2012" width="450" height="661">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/03.jpg" src="loading.gif" alt="Delko2012" width="800" height="533">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/02.jpg" src="loading.gif" alt="Delko2012" width="702" height="524">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/08.Delko2012/01.jpg" src="loading.gif" alt="Delko2012" width="500" height="698">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Bastonnade" title="Bastonnade [Poster, Experiment]" alt="Bastonnade [Poster, Experiment]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Bastonnade" alt="Bastonnade">Bastonnade</div>
+                    </td>
+                    <td class="parent opt3 dates">04-Jan-2013 23:30</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Poster, Experiment"><span class="tagCont">Poster, Experiment</span></td>
+                </tr>
+                <tr class="expand-child" id="Bastonnade-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Bastonnade-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Bastonnade-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Bastonnade
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Screenprinting experimentation for the "Bastonnade" poster collection and worldwide exhibition series, organized by <a href="http://www.frenchfourch.com/">Frenchfourch</a> collective.
+                                                    <br /> A glitched slop mixing random video footages, found on Youtube using keywords evoking situations of violence such as «fight», «brawl», «confrontation», «punch», etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/07.Bastonnade/01.jpg" src="loading.gif" alt="Bastonnade" width="631" height="900">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project selected" id="Livraison-14" title="Livraison #14 – LaBelleVirtuelle [Journal, Contemporary arts]" alt="Livraison-14 [Journal, Contemporary arts]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Livraison #14 – LaBelleVirtuelle" alt="Livraison #14 – LaBelleVirtuelle">Livraison #14 – LaBelleVirtuelle</div>
+                    </td>
+                    <td class="parent opt3 dates">26-Sep-2012 08:55</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Journal, Contemporary arts"><span class="tagCont">Journal, Contemporary arts</span></td>
+                </tr>
+                <tr class="expand-child selected" id="Livraison-14-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Livraison-14-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Livraison-14-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Livraison #14 – LaBelleVirtuelle
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Livraison is a contemporary arts journal.
+                                                    <br /> A different guest is invited to define and supervise its&nbsp;content for each issue.
+                                                    <br />
+                                                    <br /> This 14th issue was supervised by the <a href="http://www.eternalnetwork.org/scenographiesurbaines/">Urban Scenographies</a> collective (ScU2) which has organized a virtual residency (no physical presence required) in Belleville with 40 international artists, connecting this very special and multicultural Parisian area to the rest of the world. The end result is this publication which challenges the usual perceptions of Belleville – and in a more general way, of France’s relations to foreigners.
+                                                    <br />
+                                                    <br /> Each article is translated both in french and english. As a designer, I&nbsp;proposed to make a radical distinction between the two languages, symmetrically reversing each translation, giving to the journal its architecture structured around two reading directions. The object has two beginnings and two ends, two different front covers, two different narrative experiences defined by the reader’s own reading language. As a complement to this duality, a third reading direction has been given to the pictures, rotated 90 degrees : the&nbsp;visual becomes a buffer between the two languages.
+                                                    <br />
+                                                    <br />
+                                                    <u>Fonts in use</u> :
+                                                    <br /> Reglo Bold by Sebastien Sanfilippo (OSP)
+                                                    <br /> Linux Libertine by Philipp H. Poll
+                                                    <br /> Liberation Mono by Steve Matteson
+                                                    <br />
+                                                    <br />
+                                                    <u>More</u> :
+                                                    <br />
+                                                    <a href="http://labellevirtuelle.wordpress.com">http://labellevirtuelle.wordpress.com</a>
+                                                    <br />
+                                                    <a href="http://www.r-diffusion.org/index.php?ouvrage=RHI-20">http://www.r-diffusion.org/</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/006.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/005.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/004.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/003.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/002.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/001.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/06.Livraison-14/000.jpg" src="loading.gif" alt="Livraison #14 – LaBelleVirtuelle" width="1200" height="807">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="SPORK" title="SPORK [Edition, Fanzine]" alt="SPORK [Edition, Fanzine]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="SPORK" alt="SPORK">SPORK</div>
+                    </td>
+                    <td class="parent opt3 dates">06-Jun-2012 04:52</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Edition, Fanzine"><span class="tagCont">Edition, Fanzine</span></td>
+                </tr>
+                <tr class="expand-child" id="SPORK-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="SPORK-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="SPORK-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                SPORK
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Spoon + fork = SPORK
+                                                    <br /> We made this fanzine after a trip to Berlin’s Transmediale (in/compatible). It works as an archive of our thoughts, about Digital Art Conservation, collectively discussed and edited through e-mail exchanges.
+                                                    <br /> I did the layout and wrote a short text about connections existing between the stone, the engraving and the hard drive, highlighting the winding road from the Rosetta Stone to the iPhone.
+                                                    <br /> This fanzine was published in the context of a research seminar organized between ÉSAD Strasbourg and Karlsruhe’s ZKM entitled "Digital Arts Conservation".
+                                                    <br />
+                                                    <br /> This project was coordinated by art teacher <a href="http://www.sakasama.net">Anne Laforet</a> and involved six students.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/05.SPORK/02.jpg" src="loading.gif" alt="SPORK" width="900" height="654">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/05.SPORK/01.jpg" src="loading.gif" alt="SPORK" width="900" height="654">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="La-Grande-Illusion" title="La Grande Illusion [Workshop]" alt="La-Grande-Illusion [Workshop]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="La Grande Illusion" alt="La Grande Illusion">La Grande Illusion</div>
+                    </td>
+                    <td class="parent opt3 dates">20-Apr-2012 05:38</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Workshop"><span class="tagCont">Workshop</span></td>
+                </tr>
+                <tr class="expand-child" id="La-Grande-Illusion-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="La-Grande-Illusion-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="La-Grande-Illusion-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                La Grande Illusion
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Poster for a workshop with <a href="http://www.nazareno.co.uk/">Nazareno Crea</a> and <a href="http://www.sany.dk/">Samuel Nyholm</a> (Sany) I&nbsp;organized in my school in 2012. The workshop was about creating all sorts of «illusions», we had a lots of fun.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/04.La-Grande-Illusion/00.jpg" src="loading.gif" alt="La Grande Illusion" width="667" height="1001">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="phonon-canon" title="Phonon-lab ~ CANON [Video, Poster]" alt="phonon-canon [Video, Poster]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Phonon-lab ~ CANON" alt="Phonon-lab ~ CANON">Phonon-lab ~ CANON</div>
+                    </td>
+                    <td class="parent opt3 dates">03-Jan-2012 03:03</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Video, Poster"><span class="tagCont">Video, Poster</span></td>
+                </tr>
+                <tr class="expand-child" id="phonon-canon-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="phonon-canon-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="phonon-canon-prevbout" class="previous-image gallery-navigation"></div>
+                                <ul>
+                                    <li class="embed object">
+                                        <iframe class="video" data-src="//player.vimeo.com/video/34488219?portrait=0&autoplay=1&loop=1" src="" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                        </iframe>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/03.phonon-canon/00.jpg" src="loading.gif" alt="Phonon-lab ~ CANON" width="707" height="1000">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="phonon-various" title="Phonon-lab ~ Various posters [Communication, Posters]" alt="phonon-various [Communication, Posters]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Phonon-lab ~ Various posters" alt="Phonon-lab ~ Various posters">Phonon-lab ~ Various posters</div>
+                    </td>
+                    <td class="parent opt3 dates">18-Feb-2011 12:05</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Communication, Posters"><span class="tagCont">Communication, Posters</span></td>
+                </tr>
+                <tr class="expand-child" id="phonon-various-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="phonon-various-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="phonon-various-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Phonon-lab ~ Various posters
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                A series of posters made for a series of events organized by Phonon-lab during three year.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/06.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="707" height="1000">
+                                            <div class="description">
+                                                <em>With Sophie Demay</em>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/05.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="700" height="1000">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/04.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="696" height="1000">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/03.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="706" height="999">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/02.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="667" height="1001">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/02.phonon-various/01.jpg" src="loading.gif" alt="Phonon-lab ~ Various posters" width="667" height="1001">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="cultivons-notre-assiette" title="Cultivons Notre Assiette [Communication, Festival]" alt="cultivons-notre-assiette [Communication, Festival]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Cultivons Notre Assiette" alt="Cultivons Notre Assiette">Cultivons Notre Assiette</div>
+                    </td>
+                    <td class="parent opt3 dates">01-Mar-2011 12:20</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Communication, Festival"><span class="tagCont">Communication, Festival</span></td>
+                </tr>
+                <tr class="expand-child" id="cultivons-notre-assiette-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="cultivons-notre-assiette-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="cultivons-notre-assiette-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Cultivons Notre Assiette
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Screen printed poster for a mini festival in Aubenas, south of France.
+                                                    <br /> This project was made in collaboration with <a href="http://www.clementvuillier.com/">Clément Vuillier</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.cultivons-notre-assiette/02.jpg" src="loading.gif" alt="Cultivons Notre Assiette" width="560" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.cultivons-notre-assiette/01.jpg" src="loading.gif" alt="Cultivons Notre Assiette" width="560" height="800">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="phonon-flyers" title="Phonon-lab ~ Flyers [Communication, Flyers]" alt="phonon-flyers [Communication, Flyers]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Phonon-lab ~ Flyers" alt="Phonon-lab ~ Flyers">Phonon-lab ~ Flyers</div>
+                    </td>
+                    <td class="parent opt3 dates">18-Nov-2009 10:35</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Communication, Flyers"><span class="tagCont">Communication, Flyers</span></td>
+                </tr>
+                <tr class="expand-child" id="phonon-flyers-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="phonon-flyers-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="phonon-flyers-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Phonon-lab ~ Flyers
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                A series of flyers made for a series of workshops and conferences organized by Phonon-lab.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/06.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="504" height="707">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/05.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="505" height="707">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/04.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="504" height="708">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/03.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="504" height="707">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/02.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="504" height="706">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.phonon-flyers/01.jpg" src="loading.gif" alt="Phonon-lab ~ Flyers" width="504" height="708">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="project archived" id="Tierparade" title="Tierparade [Poster]" alt="Tierparade [Poster]">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./public/docs/icons/blank.png" alt="icon"></div>
+                        <div class="titres falselink" title="Tierparade" alt="Tierparade">Tierparade</div>
+                    </td>
+                    <td class="parent opt3 dates">02-Feb-2011 00:02</td>
+                    <td class="parent opt1 sizes">—</td>
+                    <td class="parent opt2 tags Poster"><span class="tagCont">Poster</span></td>
+                </tr>
+                <tr class="expand-child" id="Tierparade-child">
+                    <td class="fourColTd" colspan="4">
+                        <div class="child hideBeforeLoad">
+                            <div class='gallery'>
+                                <div id="Tierparade-nextbout" class="next-image gallery-navigation"></div>
+                                <div id="Tierparade-prevbout" class="previous-image gallery-navigation"></div>
+                                <div class="text object">
+                                    <div class="text-conteneur">
+                                        <div class="text-box">
+                                            <div class='infoTitre'>
+                                                Tierparade
+                                            </div>
+                                            <img class='cross' src='cross.gif' title='close (esc)'>
+                                            <div class='contenu'>
+                                                <p>Poster proposition for a jewelry exhibition.
+                                                    <br /> This project was made in collaboration with <a href="http://www.dianeboivin.eu/">Diane Boivin</a>.
+                                                    <br />It has been rejected but we're still proud of it.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoSquare" title='informations'>i</div>
+                                <ul>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.Tierparade/02.jpg" src="loading.gif" alt="Tierparade" width="1000" height="772">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image object">
+                                        <div class="objectContent">
+                                            <img class="lazy" data-src="./content/4.projects/01.Tierparade/01.jpg" src="loading.gif" alt="Tierparade" width="649" height="985">
+                                            <div class="description">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="ligne"></div>
+        <div id="socle">
+            <div id="otherProjects">+<span>0</span> more</div>
+        </div>
+        <div id="cale"></div>
+        <div id="footer">
+            <div id="footerNav">
+                <img id="smile" style="display:inline-block" src="./public/docs/icons/fun.gif" alt="hello">
+                <div id="bottom"> <span id="fullName">Samuel Rivers-Moore</span><span id="SRM">SRM</span> 2014 |
+                    <span id="aboutButton" class="falselink">About</span> |
+                    <input class="selectBox" type="checkbox" name="selection" value="1" onchange="selectionChanged()" /> Selection |
+                    <input class="infoBox" type="checkbox" name="informations" value="1" onchange="infoChanged()" checked/> Informations
+                    <div id="rightNav"><img id="keyboard" style="display:inline-block" src="./keyboardOk.gif" title="keyboard navigation enabled"></div>
+                </div>
+            </div>
+            <div id="about" class="hideBeforeLoad">
+                <div class="simpleColLeft">
+                    Samuel Rivers-Moore
+                    <br> Graphic design, art & else
+                    <p><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#109;&#x65;&#x73;s&#97;&#103;&#x65;&#x40;s&#97;&#109;&#x75;&#x65;&#x6c;&#114;&#105;&#x76;&#x65;&#x72;&#115;&#109;&#111;&#x6f;&#x72;e&#46;&#110;&#x65;&#x74;">&#109;&#x65;&#x73;s&#97;&#103;&#x65;&#x40;s&#97;&#109;&#x75;&#x65;&#x6c;&#114;&#105;&#x76;&#x65;&#x72;&#115;&#109;&#111;&#x6f;&#x72;e&#46;&#110;&#x65;&#x74;</a></p>
+                    <br>
+                    <br>
+                    <em>Archive website handcoded by myself.<br>
+			Content managed by <a href="http://www.staceyapp.com">stacey</a>.</em>
+                </div>
+                <div class="simpleColLeft">
+                    <p>Friends :
+                        <br />
+                        <a href="http://www.ttttttt.info">Tayeb Bayri</a>
+                        <br />
+                        <a href="http://www.lecollecteur.fr">Pierre Tandille</a>
+                        <br />
+                        <a href="http://www.sakasama.net">Anne Laforet</a>
+                        <br />
+                        <a href="http://delphinedenereaz.tumblr.com">Delphine Dénéréaz</a>
+                        <br />
+                        <a href="http://www.pierre-faedi.com">Pierre Faedi</a>
+                        <br />
+                        <a href="http://louisonlouison.com">Louison Coulom</a>
+                        <br />
+                        <a href="http://cargocollective.com/paulinebarzilai">Pauline Barzilaï</a>
+                        <br />
+                        <a href="http://www.felixramon.net">Felix Ramon</a>
+                        <br />
+                        <a href="http://www.ligie.org">Claire Serres</a>
+                        <br />
+                        <a href="http://www.dianeboivin.eu">Diane Boisvin</a>
+                        <br />
+                        <a href="http://paulsouviron.net">Paul Souviron</a>
+                        <br />
+                        <a href="http://www.nazareno.co.uk">Nazareno Crea</a>
+                        <br />
+                        <a href="http://sany.dk">Samuel Nyholm</a>
+                        <br />
+                    </p>
+                    <p><a href="http://osp.constantvzw.org/">Open Source Publishing</a>
+                        <br />
+                        <a href="http://www.pez-corp.net">PEZ-corp</a>
+                        <br />
+                        <a href="http://www.youtube.com/user/collectifsin1">Collectif Sin</a>
+                        <br />
+                        <a href="http://www.frenchfourch.com/">French Fourch</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container2">
+        <script type="text/javascript" charset="utf-8">
+        $('#container').removeClass('js-disabled').addClass("js-enabled");
+        $('#container2').remove();
+        </script>
+        <div id="repotitle" class="top">
+            <h2>
+		Index of /samuel&shy;riversmoore&shy;.net
+	</h2>
+        </div>
+        <div id="header">
+            <h1>
+		Samuel Rivers-Moore<br>
+		Graphic design, art & else
+	</h1>
+            <p><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#109;&#x65;&#x73;s&#97;&#103;&#x65;&#x40;s&#97;&#109;&#x75;&#x65;&#x6c;&#114;&#105;&#x76;&#x65;&#x72;&#115;&#109;&#111;&#x6f;&#x72;e&#46;&#110;&#x65;&#x74;">&#109;&#x65;&#x73;s&#97;&#103;&#x65;&#x40;s&#97;&#109;&#x75;&#x65;&#x6c;&#114;&#105;&#x76;&#x65;&#x72;&#115;&#109;&#111;&#x6f;&#x72;e&#46;&#110;&#x65;&#x74;</a></p>
+            <br> Content managed by <a href="http://www.staceyapp.com">stacey</a>.</em>
+        </div>
+        <table id="myTable" class="tablesorter">
+            <thead>
+                <tr id="headline">
+                    <th id="left"><span class="subHead">Name</span></th>
+                    <th class="opt3"><span class="subHead sorter-shortDate dateFormat-ddmmyyyy">Last Modified</span></th>
+                    <th class="opt1"><span class="subHead">Size</span></th>
+                    <th class="opt2"><span class="subHead">Description</span></th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                <tr class="project" id="Donelle-Woolford" title="Performer Artisan Narrator (Posters, Postcard)" alt="Donelle-Woolford (Posters, Postcard)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/17.Donelle-Woolford/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Donelle-Woolford/" title="Performer Artisan Narrator">Performer Artisan Narrator</a> </div>
+                    </td>
+                    <td class="parent dates opt3">25-Feb-2014 17:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Posters, Postcard</td>
+                </tr>
+                <tr class="project" id="Bobigny2014" title="Bobigny 2014 (Communication, Greetings)" alt="Bobigny2014 (Communication, Greetings)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/16.Bobigny2014/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Bobigny2014/" title="Bobigny 2014">Bobigny 2014</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jan-2014 23:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Communication, Greetings</td>
+                </tr>
+                <tr class="project" id="Le-Commander-Keen" title="Oui Sabotage / Le Commander Keen (Poster, Concert)" alt="Le-Commander-Keen (Poster, Concert)">
+                    <td class="section parent">
+                        <div class="titres"> <a href="./projects/Le-Commander-Keen/" title="Oui Sabotage / Le Commander Keen">Oui Sabotage / Le Commander Keen</a> </div>
+                    </td>
+                    <td class="parent dates opt3">05-Nov-2013 01:29</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Poster, Concert</td>
+                </tr>
+                <tr class="project" id="Keleketla-Radio-Show" title="Keleketla Radio (Communication, Radio program)" alt="Keleketla-Radio-Show (Communication, Radio program)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/15.Keleketla-Radio-Show/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Keleketla-Radio-Show/" title="Keleketla Radio">Keleketla Radio</a> </div>
+                    </td>
+                    <td class="parent dates opt3">27-Sep-2013 17:00</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Communication, Radio program</td>
+                </tr>
+                <tr class="project" id="Arte-Creative-Wallpaper" title="Arte Creative - wallpaper (Picture, Wallpaper)" alt="Arte-Creative-Wallpaper (Picture, Wallpaper)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/14.Arte-Creative-Wallpaper/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Arte-Creative-Wallpaper/" title="Arte Creative - wallpaper">Arte Creative - wallpaper</a> </div>
+                    </td>
+                    <td class="parent dates opt3">28-Aug-2013 23:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Picture, Wallpaper</td>
+                </tr>
+                <tr class="project" id="PPPI-introduction" title="PP/PI ~ Introduction (Introduction, Graduation)" alt="PPPI-introduction (Introduction, Graduation)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/13.PPPI-introduction/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/PPPI-introduction/" title="PP/PI ~ Introduction">PP/PI ~ Introduction</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jul-2013 00:05</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Introduction, Graduation</td>
+                </tr>
+                <tr class="project" id="PPPI-identity" title="PP/PI ~ Identity (Identity, Graduation project)" alt="PPPI-identity (Identity, Graduation project)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/12.PPPI-identity/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/PPPI-identity/" title="PP/PI ~ Identity">PP/PI ~ Identity</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jul-2013 00:04</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Identity, Graduation project</td>
+                </tr>
+                <tr class="project" id="PPPI-easyposters" title="PP/PI ~ Easy posters (Script, Poster generator)" alt="PPPI-easyposters (Script, Poster generator)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/11.PPPI-easyposters/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/PPPI-easyposters/" title="PP/PI ~ Easy posters">PP/PI ~ Easy posters</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jul-2013 00:03</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Script, Poster generator</td>
+                </tr>
+                <tr class="project" id="PPPI-twitterposters" title="PP/PI ~ Twitter posters (Script, Poster generator)" alt="PPPI-twitterposters (Script, Poster generator)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/10.PPPI-twitterposters/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/PPPI-twitterposters/" title="PP/PI ~ Twitter posters">PP/PI ~ Twitter posters</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jul-2013 00:02</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Script, Poster generator</td>
+                </tr>
+                <tr class="project" id="PPPI-hybridposters" title="PP/PI ~ Hybrid posters (Posters)" alt="PPPI-hybridposters (Posters)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/09.PPPI-hybridposters/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/PPPI-hybridposters/" title="PP/PI ~ Hybrid posters">PP/PI ~ Hybrid posters</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jul-2013 00:01</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Posters</td>
+                </tr>
+                <tr class="project" id="Thesis" title="Transparence Camouflage Opacité (Essay, Graduation)" alt="Thesis (Essay, Graduation)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/08.Thesis/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Thesis/" title="Transparence Camouflage Opacité">Transparence Camouflage Opacité</a> </div>
+                    </td>
+                    <td class="parent dates opt3">10-May-2013 23:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Essay, Graduation</td>
+                </tr>
+                <tr class="project" id="Delko2012" title="Delko2012 (Poster, Campaign)" alt="Delko2012 (Poster, Campaign)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/08.Delko2012/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Delko2012/" title="Delko2012">Delko2012</a> </div>
+                    </td>
+                    <td class="parent dates opt3">19-May-2013 15:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Poster, Campaign</td>
+                </tr>
+                <tr class="project" id="Bastonnade" title="Bastonnade (Poster, Experiment)" alt="Bastonnade (Poster, Experiment)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/07.Bastonnade/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Bastonnade/" title="Bastonnade">Bastonnade</a> </div>
+                    </td>
+                    <td class="parent dates opt3">04-Jan-2013 23:30</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Poster, Experiment</td>
+                </tr>
+                <tr class="project" id="Livraison-14" title="Livraison #14 – LaBelleVirtuelle (Journal, Contemporary arts)" alt="Livraison-14 (Journal, Contemporary arts)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/06.Livraison-14/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/Livraison-14/" title="Livraison #14 – LaBelleVirtuelle">Livraison #14 – LaBelleVirtuelle</a> </div>
+                    </td>
+                    <td class="parent dates opt3">26-Sep-2012 08:55</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Journal, Contemporary arts</td>
+                </tr>
+                <tr class="project" id="SPORK" title="SPORK (Edition, Fanzine)" alt="SPORK (Edition, Fanzine)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/05.SPORK/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/SPORK/" title="SPORK">SPORK</a> </div>
+                    </td>
+                    <td class="parent dates opt3">06-Jun-2012 04:52</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Edition, Fanzine</td>
+                </tr>
+                <tr class="project" id="La-Grande-Illusion" title="La Grande Illusion (Workshop)" alt="La-Grande-Illusion (Workshop)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/04.La-Grande-Illusion/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/La-Grande-Illusion/" title="La Grande Illusion">La Grande Illusion</a> </div>
+                    </td>
+                    <td class="parent dates opt3">20-Apr-2012 05:38</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Workshop</td>
+                </tr>
+                <tr class="project" id="phonon-canon" title="Phonon-lab ~ CANON (Video, Poster)" alt="phonon-canon (Video, Poster)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/03.phonon-canon/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/phonon-canon/" title="Phonon-lab ~ CANON">Phonon-lab ~ CANON</a> </div>
+                    </td>
+                    <td class="parent dates opt3">03-Jan-2012 03:03</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Video, Poster</td>
+                </tr>
+                <tr class="project" id="phonon-various" title="Phonon-lab ~ Various posters (Communication, Posters)" alt="phonon-various (Communication, Posters)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/02.phonon-various/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/phonon-various/" title="Phonon-lab ~ Various posters">Phonon-lab ~ Various posters</a> </div>
+                    </td>
+                    <td class="parent dates opt3">18-Feb-2011 12:05</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Communication, Posters</td>
+                </tr>
+                <tr class="project" id="cultivons-notre-assiette" title="Cultivons Notre Assiette (Communication, Festival)" alt="cultivons-notre-assiette (Communication, Festival)">
+                    <td class="section parent">
+                        <div class="titres"> <a href="./projects/cultivons-notre-assiette/" title="Cultivons Notre Assiette">Cultivons Notre Assiette</a> </div>
+                    </td>
+                    <td class="parent dates opt3">01-Mar-2011 12:20</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Communication, Festival</td>
+                </tr>
+                <tr class="project" id="phonon-flyers" title="Phonon-lab ~ Flyers (Communication, Flyers)" alt="phonon-flyers (Communication, Flyers)">
+                    <td class="section parent">
+                        <div class="iconCont"><img class="icon" style="display:inline-block" src="./content/4.projects/01.phonon-flyers/thumb.png" class="project-thumb" alt=""> </div>
+                        <div class="titres"> <a href="./projects/phonon-flyers/" title="Phonon-lab ~ Flyers">Phonon-lab ~ Flyers</a> </div>
+                    </td>
+                    <td class="parent dates opt3">18-Nov-2009 10:35</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Communication, Flyers</td>
+                </tr>
+                <tr class="project" id="Tierparade" title="Tierparade (Poster)" alt="Tierparade (Poster)">
+                    <td class="section parent">
+                        <div class="titres"> <a href="./projects/Tierparade/" title="Tierparade">Tierparade</a> </div>
+                    </td>
+                    <td class="parent dates opt3">02-Feb-2011 00:02</td>
+                    <td class="parent opt1">—</td>
+                    <td class="parent opt2">Poster</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="cale"></div>
+        <div id="footer">
+            <div id="footerNav">
+                <img id="smile" style="display:inline-block" src="./public/docs/icons/fun.gif" alt="hello">
+                <div id="bottom"> <span id="fullName">Samuel Rivers-Moore</span><span id="SRM">SRM</span> 2014 |
+                    <a class="atom-rss" href="./?/feed/">RSS</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="./public/docs/js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="./public/docs/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="./public/docs/js/script.js"></script>
+</body>
+
+</html>
+<!-- Stacey(2.3.0): 5b6087003085f1b4dfcdbfa95d040e16 -->
+<!-- Cached. -->
